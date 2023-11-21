@@ -1,0 +1,61 @@
+package instrumentosmusicales;
+
+import java.util.Scanner;
+
+public class InstrumentosMusicales {
+
+    public static void main(String[] args) {
+        Scanner Scanner;
+        Scanner = new Scanner(System.in);
+
+        System.out.println("¿Qué instrumento deseas conocer?");
+        System.out.println("1. Piano");
+        System.out.println("2. Acordeon");
+        System.out.println("3. Arpa");
+        System.out.println("4. Tambor");
+
+        int opcion = Scanner.nextInt();
+
+        switch (opcion) {
+            case 1:
+                Piano piano = new Piano("Steinway", "Steinway Model D", 7.500000, "Negro");
+                piano.mostrarCaracteristicas();
+                break;
+            case 2:
+                Acordeon acordeon = new Acordeon("Hohner", "Hohner Corona III", 450.000, "Rojo con blanco");
+                acordeon.mostrarCaracteristicas();
+                break;
+            case 3:
+                 Arpa Arpa = new Arpa("Salvi", "Salvi Daphne 47", 1.350000, "Dorado");
+                Arpa.mostrarCaracteristicas();
+                break;
+                case 4:
+                 Tambor Tambor = new Tambor("DW", "DW collector's ", 500.000, "Morado con azul degradado");
+                Tambor.mostrarCaracteristicas();
+                break;
+                case 5:
+                Guitarra Guitarra = new Guitarra("DW", "DW collector's ", 500.000, "Morado con azul degradado");
+                Guitarra.mostrarCaracteristicas();
+                break;
+                
+                case 6:
+                Violin Violin = new Violin("DW", "DW collector's ", 500.000, "Morado con azul degradado");
+                Violin.mostrarCaracteristicas();
+                break;
+
+                case 7:
+                Flauta Flauta = new Flauta("DW", "DW collector's ", 500.000, "Morado con azul degradado");
+                Flauta.mostrarCaracteristicas();
+                break;
+                
+                
+                
+                
+                
+            default:
+                System.out.println("Opción no válida");
+        }
+
+        Scanner.close();
+    }
+}
