@@ -1,0 +1,22 @@
+package instrumentosmusicales;
+
+public class Instrumentos {
+    String marca;
+    String modelo;
+    double precio;
+    String color;
+    
+    public Instrumentos(String marca, String modelo, double precio, String color) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.precio = precio;
+        this.color = color;
+    }
+    
+    public void mostrarCaracteristicas() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Precio: " + precio);
+        System.out.println("Color: " + color);
+    }
+}
